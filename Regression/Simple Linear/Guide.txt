@@ -13,13 +13,8 @@ pip install pandas matplotlib scikit-learn notebook
 C. Create your notebook
 In VS Code:
 Open your project folder (Simple Linear)
-Create a new file named: student_scores_regression.ipynb
 
+Create a new file named: student_scores_regression.ipynb
 Dataset Kaggle Link: https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression
 
-
-STEP 1: FORMULATE RESEARCH QUESTION
-    Before coding, write the problem clearly.
-    Example research question: 
-    "Is there a linear relationship between hours studied and student scores, and can we use hours studied to predict student scores?"
     
