@@ -92,7 +92,7 @@ The notebooks are organized for teaching flow:
 - Updated this README to include Multiple Linear Regression content and revised project structure.
 - Added all README visual assets from `assets/` to improve presentation and navigation flow.
 
-## VS Code Style Project Explorer
+## Project Structure
 
 <p align="center">
   <img src="./assets/vscode-explorer-animated.svg" alt="VS Code style animated project explorer" width="100%" />
@@ -102,26 +102,6 @@ The notebooks are organized for teaching flow:
   <img src="./assets/readme-divider.svg" alt="Animated divider" width="100%" />
 </p>
 
-## Repository Structure
-
-```text
-Machine_Learning_Algorithms_Beginner_Friendly_Guide/
-|-- README.md
-|-- assets/
-|   |-- ml-banner.svg
-|   |-- readme-divider.svg
-|   `-- vscode-explorer-animated.svg
-`-- Regression/
-    |-- Simple Linear/
-    |   |-- Guide.txt
-    |   |-- Student_Performance.csv
-    |   |-- image.png
-    |   `-- student_scores_regression.ipynb
-    `-- Mutiple Linear/
-        |-- Guide.txt
-        |-- advertising.csv
-        `-- advertising_regression.ipynb
-```
 
 ## Contributing
 
