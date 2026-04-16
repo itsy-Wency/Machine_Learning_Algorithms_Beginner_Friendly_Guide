@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 56" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Section Divider</title>
+  <desc id="desc">A modern animated gradient divider used across README sections.</desc>
+
+  <defs>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="56" fill="none"/>
+
+  <path d="M40 28 H1160" stroke="url(#line)" stroke-width="6" stroke-linecap="round" stroke-dasharray="20 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="-136" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <circle cx="120" cy="28" r="6" fill="#22d3ee">
+    <animate attributeName="cx" values="120;1080;120" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
