@@ -1,9 +1,7 @@
 # Machine Learning Algorithms Beginner Friendly Guide
 
 <p align="center">
-  <a href="#demo-links">
-    <img src="./assets/ML banner.gif" alt="Machine Learning beginner banner" width="100%" />
-  </a>
+  <img src="./assets/ML banner.gif" alt="Machine Learning beginner banner" width="100%" />
 </p>
 
 <p align="center">
