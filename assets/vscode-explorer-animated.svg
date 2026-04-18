@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">VS Code Style Project Explorer</title>
-  <desc id="desc">Animated project structure panel inspired by the Visual Studio Code explorer layout.</desc>
+  <desc id="desc">Animated project structure panel inspired by the Visual Studio Code explorer layout, showing a readable scrollable view of the current repository structure.</desc>
 
   <defs>
     <linearGradient id="shellBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -12,64 +12,85 @@
       <stop offset="100%" stop-color="#121a2a"/>
     </linearGradient>
     <linearGradient id="highlight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.16"/>
     </linearGradient>
     <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#22d3ee"/>
       <stop offset="60%" stop-color="#3b82f6"/>
       <stop offset="100%" stop-color="#34d399"/>
     </linearGradient>
+    <clipPath id="treeClip">
+      <rect x="298" y="96" width="850" height="572" rx="10"/>
+    </clipPath>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="700" fill="url(#shellBg)"/>
-  <rect x="24" y="24" width="1152" height="652" rx="18" fill="url(#panelBg)" stroke="#1e293b" stroke-width="2"/>
+  <rect x="0" y="0" width="1200" height="760" fill="url(#shellBg)"/>
+  <rect x="24" y="24" width="1152" height="712" rx="18" fill="url(#panelBg)" stroke="#1e293b" stroke-width="2"/>
 
   <rect x="24" y="24" width="1152" height="52" rx="18" fill="#0a1220"/>
   <circle cx="54" cy="50" r="8" fill="#fb7185"/>
   <circle cx="80" cy="50" r="8" fill="#fbbf24"/>
   <circle cx="106" cy="50" r="8" fill="#4ade80"/>
   <text x="138" y="56" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="18">
-    EXPLORER — Machine_Learning_Algorithms_Beginner_Friendly_Guide
+    EXPLORER - Machine_Learning_Algorithms_Beginner_Friendly_Guide
   </text>
 
-  <rect x="24" y="76" width="250" height="600" fill="#0a1220"/>
+  <rect x="24" y="76" width="250" height="660" fill="#0a1220"/>
   <text x="44" y="112" fill="#93c5fd" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">PROJECT</text>
   <text x="44" y="142" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="14">Open Editors</text>
   <text x="44" y="172" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="14">Search</text>
   <text x="44" y="202" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="14">Source Control</text>
 
-  <line x1="274" y1="76" x2="274" y2="676" stroke="#1e293b" stroke-width="2"/>
-
-  <rect x="292" y="98" width="860" height="30" fill="url(#highlight)">
-    <animate attributeName="y" values="98;130;162;194;226;258;290;322;354;386;418;450;482;514;98" dur="14s" repeatCount="indefinite"/>
-  </rect>
-
+  <line x1="274" y1="76" x2="274" y2="736" stroke="#1e293b" stroke-width="2"/>
   <line x1="300" y1="88" x2="1140" y2="88" stroke="url(#accentLine)" stroke-width="2" stroke-dasharray="10 9">
     <animate attributeName="stroke-dashoffset" from="0" to="-152" dur="8s" repeatCount="indefinite"/>
   </line>
 
-  <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#e2e8f0">
-    <text x="308" y="120">▾  Machine_Learning_Algorithms_Beginner_Friendly_Guide</text>
-    <text x="340" y="152">▾  assets</text>
-    <text x="372" y="184">•  ml-banner.svg</text>
-    <text x="372" y="216">•  readme-divider.svg</text>
-    <text x="372" y="248">•  vscode-explorer-animated.svg</text>
-    <text x="340" y="280">•  README.md</text>
-    <text x="340" y="312">▾  Regression</text>
-    <text x="372" y="344">▾  Simple Linear</text>
-    <text x="404" y="376">•  Guide.txt</text>
-    <text x="404" y="408">•  Student_Performance.csv</text>
-    <text x="404" y="440">•  image.png</text>
-    <text x="404" y="472">•  student_scores_regression.ipynb</text>
-    <text x="372" y="504">▾  Mutiple Linear</text>
-    <text x="404" y="536">•  Guide.txt</text>
-    <text x="404" y="568">•  advertising.csv</text>
-    <text x="404" y="600">•  advertising_regression.ipynb</text>
+  <rect x="298" y="96" width="850" height="572" rx="10" fill="#08111f" stroke="#1e293b"/>
+  <rect x="1130" y="114" width="6" height="536" rx="3" fill="#162033"/>
+  <rect x="1130" y="124" width="6" height="118" rx="3" fill="#3b82f6">
+    <animate attributeName="y" values="124;214;304;394;484;394;304;214;124" dur="18s" repeatCount="indefinite"/>
+  </rect>
+
+  <g clip-path="url(#treeClip)">
+    <g font-family="Consolas, 'Courier New', monospace" font-size="19" fill="#e2e8f0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -120;0 -240;0 -360;0 -240;0 -120;0 0" dur="18s" repeatCount="indefinite"/>
+
+      <rect x="304" y="104" width="818" height="32" rx="8" fill="url(#highlight)"/>
+      <text x="316" y="126">v  Machine_Learning_Algorithms_Beginner_Friendly_Guide</text>
+
+      <text x="348" y="164">&gt;  assets</text>
+      <text x="348" y="202">v  Regression</text>
+
+      <rect x="336" y="220" width="736" height="32" rx="8" fill="url(#highlight)"/>
+      <text x="380" y="242">v  Mutiple Linear</text>
+      <text x="412" y="280">-  Guide.txt</text>
+      <text x="412" y="318">-  advertising.csv</text>
+      <text x="412" y="356">-  advertising_model.pkl</text>
+      <text x="412" y="394">-  advertising_regression.ipynb</text>
+      <text x="412" y="432">-  app.py</text>
+
+      <rect x="336" y="458" width="736" height="32" rx="8" fill="url(#highlight)"/>
+      <text x="380" y="480">v  Simple Linear</text>
+      <text x="412" y="518">-  Guide.txt</text>
+      <text x="412" y="556">-  Student_Performance.csv</text>
+      <text x="412" y="594">-  app.py</text>
+      <text x="412" y="632">-  image.png</text>
+      <text x="412" y="670">-  student_model.pkl</text>
+      <text x="412" y="708">-  student_scores_model.pkl</text>
+      <text x="412" y="746">-  student_scores_regression.ipynb</text>
+
+      <rect x="336" y="772" width="736" height="32" rx="8" fill="url(#highlight)"/>
+      <text x="348" y="832">-  .gitignore</text>
+      <text x="348" y="870">-  README.md</text>
+      <text x="348" y="908">-  requirements.txt</text>
+    </g>
   </g>
 
-  <rect x="300" y="626" width="840" height="26" rx="8" fill="#0a1220" stroke="#1e293b" stroke-width="1"/>
-  <text x="316" y="644" fill="#93c5fd" font-family="Consolas, 'Courier New', monospace" font-size="14">
-    main | Python | Jupyter | Learning-first notebooks with interpretation notes
+  <rect x="300" y="686" width="840" height="30" rx="8" fill="#0a1220" stroke="#1e293b" stroke-width="1"/>
+  <text x="316" y="706" fill="#93c5fd" font-family="Consolas, 'Courier New', monospace" font-size="14">
+    Learning Algorithms Beginner Friendly Guide by itsy-Wency
   </text>
+  <rect x="1088" y="687" width="42" height="28" rx="6" fill="#111827" stroke="#334155" stroke-width="1"/>
 </svg>

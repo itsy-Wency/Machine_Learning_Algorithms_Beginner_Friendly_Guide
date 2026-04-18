@@ -101,14 +101,6 @@ pip install streamlit numpy altair matplotlib pandas scikit-learn seaborn notebo
 4. Run all cells in order.
 5. Read the explanation markdown after each code block.
 
-## Notebook Learning Format
-
-The notebooks are organized for teaching flow:
-- code cells for each step
-- markdown explanations directly after code
-- output interpretation notes
-- figure and diagram interpretation notes
-
 ## Learning Roadmap
 
 - [x] Simple Linear Regression
