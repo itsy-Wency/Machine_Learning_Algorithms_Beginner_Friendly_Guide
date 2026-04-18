@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#demo-links">
-    <img src="./assets/ml-banner.svg" alt="Machine Learning beginner banner" width="100%" />
+    <img src="./assets/ML banner.gif" alt="Machine Learning beginner banner" width="100%" />
   </a>
 </p>
 
