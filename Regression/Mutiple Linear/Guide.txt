@@ -1,20 +1,90 @@
-A. Install needed tools
-Make sure you have:
-Python
-VS Code
-VS Code extensions:
-Python
-Jupyter
+Dataset source:
+https://www.kaggle.com/datasets/ashydv/advertising-dataset
 
-B. Install libraries
-Open the VS Code terminal and run:
-pip install pandas matplotlib scikit-learn seaborn
+A. Project Files and Purpose
+-----------------------------
+Keep all of these files together in the `Regression/Mutiple Linear` folder:
+- `advertising.csv` : raw dataset used for training and analysis
+- `advertising_regression.ipynb` : notebook for EDA, model training, evaluation, and model export
+- `advertising_model.pkl` : exported trained model created from the notebook (used by the Streamlit app)
+- `app.py` : Streamlit app that loads the `model.pkl` file and demos predictions
+- `Guide.txt` : this project setup and run instruction file
 
-C. Create your notebook
-In VS Code:
-Open your project folder (Multiple Linear)
+B. Required Tools
+------------------
+Install these tools before running the project:
+- Python 3.10 or newer
+- Visual Studio Code
+- VS Code extensions:
+  - Python
+  - Jupyter
+  - (optional) Pylance for better IntelliSense
 
-Create a new file named: advertising_regression.ipynb
-Dataset Kaggle Link: https://www.kaggle.com/datasets/ashydv/advertising-dataset
+C. Python Package Installation
+-------------------------------
+Open a terminal in the project folder and run:
+
+    python -m pip install pandas numpy scikit-learn matplotlib streamlit
+
+For notebook plotting and optional EDA, install:
+
+    python -m pip install seaborn
+
+If using VS Code with a virtual environment, activate it first before installing packages.
+
+D. Model File Requirement
+--------------------------
+The Streamlit app expects a model file named `advertising_model.pkl` in the same folder as `app.py`.
+This is the file exported from the notebook.
+If you retrain the model in the notebook, the app will automatically use the updated `advertising_model.pkl`.
+
+E. How to Run the Streamlit App
+--------------------------------
+From the `Regression/Mutiple Linear` folder, run:
+
+    python -m streamlit run app.py
+
+Then open the browser link shown in the terminal.
+
+The app features sliders that represent percentages (0-100%) of the maximum budget observed in the training data:
+- TV: 0-100% of $296.40 maximum
+- Radio: 0-100% of $49.60 maximum  
+- Newspaper: 0-100% of $114.00 maximum
+
+This standardized approach makes it easier to compare the relative impact of each advertising channel.
+
+F. How to Use the Notebook
+---------------------------
+Open `advertising_regression.ipynb` in VS Code and execute cells sequentially.
+The notebook contains steps to:
+- load the dataset from `advertising.csv`
+- explore the data with charts and statistics
+- train a multiple linear regression model
+- evaluate model performance
+- export the trained model to a `.pkl` file
+
+G. Important Notes
+------------------
+- If `streamlit` is missing, install it in the same Python environment used by VS Code.
+- If you export a new model, copy or rename it to `model.pkl`.
+- Keep the `model.pkl` file next to `app.py`.
+- Use the notebook for learning and verification, and the Streamlit app for interactive demonstration.
+
+H. Recommended Extensions and Extras
+-------------------------------------
+- Python and Jupyter are required.
+- Pylance or Pyright is recommended for better code completion.
+- GitLens is useful if you version-control the project.
+
+I. Quick Start Summary
+-----------------------
+1. Open the `Multiple Linear` project folder in VS Code.
+2. Activate your Python environment.
+3. Install dependencies:
+   `python -m pip install pandas numpy scikit-learn matplotlib streamlit`
+4. Ensure `model.pkl` is present alongside `app.py`.
+5. Run the app:
+   `python -m streamlit run app.py`
+6. Open `advertising_regression.ipynb` to review training and export steps.
 
     
