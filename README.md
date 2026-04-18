@@ -8,6 +8,11 @@
   Beginner-friendly guides and sample projects for practical machine learning algorithms.
 </p>
 
+## Live Demo
+
+Multiple Linear Regression app:
+https://multiple-linear-regression-model-advertising-sales.streamlit.app/
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python badge" />
   <img src="https://img.shields.io/badge/Notebook-Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter badge" />
@@ -43,6 +48,7 @@ Goals:
 | Multiple Linear Regression | Guide | [Guide.txt](./Regression/Mutiple%20Linear/Guide.txt) |
 | Multiple Linear Regression | Notebook | [advertising_regression.ipynb](./Regression/Mutiple%20Linear/advertising_regression.ipynb) |
 | Multiple Linear Regression | Dataset | [advertising.csv](./Regression/Mutiple%20Linear/advertising.csv) |
+| Multiple Linear Regression | Live App | [Streamlit Demo](https://multiple-linear-regression-model-advertising-sales.streamlit.app/) |
 
 ## Quick Start
 
@@ -82,6 +88,11 @@ The notebooks are organized for teaching flow:
 - [ ] Principal Component Analysis
 
 ## Latest Updates
+
+### April 18, 2026
+
+- Redesigned the Multiple Linear Regression Streamlit app with a more modern dashboard-style interface.
+- Added the live Streamlit demo link to the repository documentation.
 
 ### April 16, 2026
 
