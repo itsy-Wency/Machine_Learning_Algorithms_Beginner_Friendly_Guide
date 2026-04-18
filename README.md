@@ -27,18 +27,34 @@ Current live Streamlit demos in this repository:
 
 | App | Live Demo | Source |
 | --- | --- | --- |
+| Simple Linear Regression | [Open App](https://simple-linear-regression-model-studentscores.streamlit.app/) | [Regression/Simple Linear/app.py](./Regression/Simple%20Linear/app.py) |
 | Multiple Linear Regression | [Open App](https://multiple-linear-regression-model-advertising-sales.streamlit.app/) | [Regression/Mutiple Linear/app.py](./Regression/Mutiple%20Linear/app.py) |
 
 ## App Previews
 
 <p align="center">
-  <a href="https://multiple-linear-regression-model-advertising-sales.streamlit.app/">
-    <img src="./assets/multiple-linear-streamlit-preview.svg" alt="Multiple Linear Regression Streamlit app preview in light and dark mode" width="100%" />
-  </a>
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://simple-linear-regression-model-studentscores.streamlit.app/">
+          <img src="./assets/simple-linear-streamlit-preview.svg" alt="Simple Linear Regression Streamlit app preview in light and dark mode" width="100%" />
+        </a>
+        <br />
+        <strong>Simple Linear Regression</strong>
+      </td>
+      <td align="center" width="50%">
+        <a href="https://multiple-linear-regression-model-advertising-sales.streamlit.app/">
+          <img src="./assets/multiple-linear-streamlit-preview.svg" alt="Multiple Linear Regression Streamlit app preview in light and dark mode" width="100%" />
+        </a>
+        <br />
+        <strong>Multiple Linear Regression</strong>
+      </td>
+    </tr>
+  </table>
 </p>
 
 <p align="center">
-  Click the preview card to open the live app.
+  Click any preview card in the gallery to open the live app.
 </p>
 
 ## Purpose
@@ -63,6 +79,7 @@ Goals:
 | Simple Linear Regression | Guide | [Guide.txt](./Regression/Simple%20Linear/Guide.txt) |
 | Simple Linear Regression | Notebook | [student_scores_regression.ipynb](./Regression/Simple%20Linear/student_scores_regression.ipynb) |
 | Simple Linear Regression | Dataset | [Student_Performance.csv](./Regression/Simple%20Linear/Student_Performance.csv) |
+| Simple Linear Regression | Live App | [Streamlit Demo](https://simple-linear-regression-model-studentscores.streamlit.app/) |
 | Multiple Linear Regression | Guide | [Guide.txt](./Regression/Mutiple%20Linear/Guide.txt) |
 | Multiple Linear Regression | Notebook | [advertising_regression.ipynb](./Regression/Mutiple%20Linear/advertising_regression.ipynb) |
 | Multiple Linear Regression | Dataset | [advertising.csv](./Regression/Mutiple%20Linear/advertising.csv) |
@@ -74,7 +91,7 @@ Goals:
 2. Install dependencies:
 
 ```bash
-pip install pandas matplotlib seaborn scikit-learn notebook
+pip install streamlit numpy altair matplotlib pandas scikit-learn seaborn notebook
 ```
 
 3. Open one notebook:
@@ -109,6 +126,9 @@ The notebooks are organized for teaching flow:
 
 ### April 18, 2026
 
+- Added a new Simple Linear Regression Streamlit app for student score prediction using the exported pickle model.
+- Added the Simple Linear Regression live demo link and a matching preview card to the README.
+- Converted the app preview section into a gallery layout so both deployed regression apps are showcased together.
 - Refined the Multiple Linear Regression Streamlit app into a more minimalist, theme-aware layout that adapts better to Streamlit light and dark mode.
 - Added a dedicated README demo-links section and a clickable UI preview card for the live Streamlit app.
 

@@ -1,0 +1,130 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="32" fill="#0F172A"/>
+  <rect x="24" y="24" width="1152" height="712" rx="26" fill="#111827"/>
+  <text x="60" y="92" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    Simple Linear Regression Streamlit UI Preview
+  </text>
+  <text x="60" y="128" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="16">
+    Beginner-friendly preview showing the Study Hours to Exam Score learning flow
+  </text>
+
+  <rect x="56" y="170" width="520" height="520" rx="26" fill="#FFFDF8"/>
+  <rect x="624" y="170" width="520" height="520" rx="26" fill="#111827" stroke="#334155"/>
+
+  <text x="84" y="214" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">
+    Light Mode
+  </text>
+  <text x="652" y="214" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">
+    Dark Mode
+  </text>
+
+  <rect x="84" y="238" width="120" height="410" rx="18" fill="#F3F4F6"/>
+  <rect x="652" y="238" width="120" height="410" rx="18" fill="#1F2937"/>
+
+  <rect x="224" y="238" width="320" height="116" rx="22" fill="#F7F3EC" stroke="#E5E7EB"/>
+  <rect x="792" y="238" width="320" height="116" rx="22" fill="#172033" stroke="#334155"/>
+
+  <rect x="224" y="374" width="98" height="88" rx="18" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="334" y="374" width="98" height="88" rx="18" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="444" y="374" width="98" height="88" rx="18" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <rect x="792" y="374" width="98" height="88" rx="18" fill="#111827" stroke="#334155"/>
+  <rect x="902" y="374" width="98" height="88" rx="18" fill="#111827" stroke="#334155"/>
+  <rect x="1012" y="374" width="98" height="88" rx="18" fill="#111827" stroke="#334155"/>
+
+  <rect x="224" y="486" width="208" height="162" rx="20" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="444" y="486" width="100" height="162" rx="20" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="792" y="486" width="208" height="162" rx="20" fill="#111827" stroke="#334155"/>
+  <rect x="1012" y="486" width="100" height="162" rx="20" fill="#111827" stroke="#334155"/>
+
+  <rect x="244" y="268" width="92" height="10" rx="5" fill="#38BDF8" opacity="0.9"/>
+  <rect x="812" y="268" width="92" height="10" rx="5" fill="#38BDF8" opacity="0.9"/>
+  <rect x="244" y="290" width="220" height="18" rx="9" fill="#0F172A"/>
+  <rect x="812" y="290" width="232" height="18" rx="9" fill="#F8FAFC"/>
+  <rect x="244" y="322" width="248" height="10" rx="5" fill="#94A3B8"/>
+  <rect x="812" y="322" width="248" height="10" rx="5" fill="#475569"/>
+
+  <text x="102" y="276" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">
+    CONTROLS
+  </text>
+  <text x="102" y="302" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">
+    Study Hours
+  </text>
+  <rect x="102" y="324" width="82" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="102" y="350" width="82" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="102" y="382" width="72" height="6" rx="3" fill="#38BDF8"/>
+  <rect x="102" y="408" width="56" height="6" rx="3" fill="#94A3B8"/>
+
+  <text x="670" y="276" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">
+    CONTROLS
+  </text>
+  <text x="670" y="302" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">
+    Study Hours
+  </text>
+  <rect x="670" y="324" width="82" height="8" rx="4" fill="#334155"/>
+  <rect x="670" y="350" width="82" height="8" rx="4" fill="#334155"/>
+  <rect x="670" y="382" width="72" height="6" rx="3" fill="#38BDF8"/>
+  <rect x="670" y="408" width="56" height="6" rx="3" fill="#475569"/>
+
+  <text x="242" y="404" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    PREDICTED SCORE
+  </text>
+  <text x="242" y="438" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    69.24
+  </text>
+
+  <text x="352" y="404" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    INTERCEPT
+  </text>
+  <text x="352" y="438" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">
+    70.34
+  </text>
+
+  <text x="462" y="404" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    SLOPE
+  </text>
+  <text x="462" y="438" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">
+    -0.17
+  </text>
+
+  <text x="810" y="404" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    PREDICTED SCORE
+  </text>
+  <text x="810" y="438" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    69.24
+  </text>
+
+  <text x="920" y="404" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    INTERCEPT
+  </text>
+  <text x="920" y="438" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">
+    70.34
+  </text>
+
+  <text x="1030" y="404" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    SLOPE
+  </text>
+  <text x="1030" y="438" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">
+    -0.17
+  </text>
+
+  <path d="M252 610L284 595L316 586L348 574L380 560L412 548" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="380" cy="560" r="7" fill="#38BDF8"/>
+  <rect x="244" y="506" width="132" height="10" rx="5" fill="#CBD5E1"/>
+  <rect x="244" y="526" width="88" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="464" y="506" width="60" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="464" y="530" width="60" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="464" y="554" width="60" height="12" rx="6" fill="#E5E7EB"/>
+
+  <path d="M820 610L852 595L884 586L916 574L948 560L980 548" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="948" cy="560" r="7" fill="#38BDF8"/>
+  <rect x="812" y="506" width="132" height="10" rx="5" fill="#334155"/>
+  <rect x="812" y="526" width="88" height="8" rx="4" fill="#475569"/>
+  <rect x="1032" y="506" width="60" height="12" rx="6" fill="#1F2937" stroke="#334155"/>
+  <rect x="1032" y="530" width="60" height="12" rx="6" fill="#1F2937" stroke="#334155"/>
+  <rect x="1032" y="554" width="60" height="12" rx="6" fill="#1F2937" stroke="#334155"/>
+
+  <text x="60" y="714" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="15">
+    Click the preview card in the README gallery to open the live Streamlit app.
+  </text>
+</svg>
