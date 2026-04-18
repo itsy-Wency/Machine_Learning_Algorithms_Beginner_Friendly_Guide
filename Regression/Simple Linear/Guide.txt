@@ -1,20 +1,92 @@
-A. Install needed tools
-Make sure you have:
-Python
-VS Code
-VS Code extensions:
-Python
-Jupyter
+Dataset source:
+https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression
 
-B. Install libraries
-Open the VS Code terminal and run:
-pip install pandas matplotlib scikit-learn notebook
+A. Project Files and Purpose
+-----------------------------
+Keep all of these files together in the `Regression/Simple Linear` folder:
+- `Student_Performance.csv` : raw dataset used for training, analysis, and plotting
+- `student_scores_regression.ipynb` : notebook for EDA, model training, evaluation, and model export
+- `student_model.pkl` : trained model file used by the Streamlit app
+- `student_scores_model.pkl` : fallback exported model file created from the notebook
+- `app.py` : Streamlit app that loads the trained model and demonstrates predictions
+- `Guide.txt` : this project setup and run instruction file
 
-C. Create your notebook
-In VS Code:
-Open your project folder (Simple Linear)
+B. Required Tools
+------------------
+Install these tools before running the project:
+- Python 3.10 or newer
+- Visual Studio Code
+- VS Code extensions:
+  - Python
+  - Jupyter
+  - (optional) Pylance for better IntelliSense
 
-Create a new file named: student_scores_regression.ipynb
-Dataset Kaggle Link: https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression
+C. Python Package Installation
+-------------------------------
+Open a terminal in the project folder and run:
 
-    
+    python -m pip install pandas numpy scikit-learn matplotlib streamlit
+
+If using VS Code with a virtual environment, activate it first before installing packages.
+
+D. Model File Requirement
+--------------------------
+The Streamlit app expects a model file named `student_model.pkl` in the same folder as `app.py`.
+If `student_model.pkl` is not available, the app can also load `student_scores_model.pkl`.
+These model files are exported from the notebook after training the linear regression model.
+
+E. How to Run the Streamlit App
+--------------------------------
+From the `Regression/Simple Linear` folder, run:
+
+    python -m pip install pandas numpy scikit-learn matplotlib streamlit
+    python -m streamlit run app.py
+
+Then open the browser link shown in the terminal.
+
+The app includes:
+- a slider for Study Hours from 0 to 10
+- a predicted exam score output
+- a regression line plot
+- a training data scatter plot with the regression line
+- a residual view to help explain prediction error
+- the linear equation used by the model
+
+F. How to Use the Notebook
+---------------------------
+Open `student_scores_regression.ipynb` in VS Code and execute cells sequentially.
+The notebook contains steps to:
+- load the dataset from `Student_Performance.csv`
+- inspect the structure of the data
+- visualize the relationship between study hours and scores
+- train a simple linear regression model
+- evaluate model performance
+- export the trained model to a `.pkl` file
+
+G. Important Notes
+------------------
+- If `streamlit` is missing, install it in the same Python environment used by VS Code.
+- Keep `student_model.pkl` in the same folder as `app.py`.
+- If you export a new model from the notebook, make sure the app can still find `student_model.pkl` or `student_scores_model.pkl`.
+- Use the notebook for step-by-step learning, and use the Streamlit app for interactive demonstration.
+
+H. Recommended Extensions and Extras
+-------------------------------------
+- Python and Jupyter are required.
+- Pylance or Pyright is recommended for better code completion.
+- GitLens is useful if you version-control the project.
+
+I. Quick Start Summary
+-----------------------
+1. Open the `Simple Linear` project folder in VS Code.
+2. Activate your Python environment.
+3. Install dependencies:
+   `python -m pip install pandas numpy scikit-learn matplotlib streamlit`
+4. Ensure `student_model.pkl` is present alongside `app.py`.
+5. Run the app:
+    Run these codes one by one in terminal:
+    cd "Regression/Simple Linear"
+    python -m pip install pandas numpy scikit-learn matplotlib streamlit
+    python -m streamlit run app.py
+
+6. Open `student_scores_regression.ipynb` to review training and export steps.
