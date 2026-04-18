@@ -4,7 +4,7 @@ import altair as alt
 import numpy as np
 import streamlit as st
 
-DEMO_URL = "https://multiple-linear-regression-model-advertising-sales.streamlit.app/"
+GITHUB_URL = "https://github.com/itsy-Wency/Machine_Learning_Algorithms_Beginner_Friendly_Guide"
 DATASET_URL = "https://www.kaggle.com/datasets/ashydv/advertising-dataset"
 
 MODEL_COEFFICIENTS = np.array(
@@ -388,8 +388,6 @@ def main():
     st.sidebar.caption(f"TV: ${TV_MAX:.1f}")
     st.sidebar.caption(f"Radio: ${RADIO_MAX:.1f}")
     st.sidebar.caption(f"Newspaper: ${NEWSPAPER_MAX:.1f}")
-    st.sidebar.caption("Theme-aware UI: the layout follows Streamlit light and dark mode.")
-    st.sidebar.link_button("Open live demo", DEMO_URL, use_container_width=True)
 
     tv_budget = tv_percent * (TV_MAX / 100)
     radio_budget = radio_percent * (RADIO_MAX / 100)
@@ -421,7 +419,7 @@ def main():
                 <div class="pill-row">
                     <span class="pill">Minimalist layout</span>
                     <span class="pill">Light and dark mode friendly</span>
-                    <span class="pill">Live demo linked below</span>
+                    <span class="pill">Code repository linked below</span>
                 </div>
             </div>
             """,
@@ -442,7 +440,7 @@ def main():
                 <div class="tiny-note">
                     Current variable lift: <strong>{total_from_contributions:.2f}</strong><br>
                     Model intercept: <strong>{intercept:.2f}</strong><br>
-                    Live demo: <a href="{DEMO_URL}" target="_blank">{DEMO_URL}</a>
+                    Code repository: <a href="{GITHUB_URL}" target="_blank">Machine Learning Algorithms: Beginner Friendly Guide</a>
                 </div>
                 """,
                 unsafe_allow_html=True,
@@ -560,8 +558,8 @@ def main():
         <div class="footer-links">
             Dataset source:
             <a href="{DATASET_URL}" target="_blank">Advertising dataset on Kaggle</a><br>
-            Demo link:
-            <a href="{DEMO_URL}" target="_blank">{DEMO_URL}</a>
+            Code repository:
+            <a href="{GITHUB_URL}" target="_blank">Machine Learning Algorithms: Beginner Friendly Guide</a>
         </div>
         """,
         unsafe_allow_html=True,
